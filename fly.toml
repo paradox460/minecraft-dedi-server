@@ -61,17 +61,13 @@ PLUGINS="https://cdn.modrinth.com/data/1u6JkXh5/versions/VaMk0SQH/worldedit-bukk
 
 # Automatic plugins
 
-# 22023 = https://www.spigotmc.org/resources/slot-machine.22023/ Slot Machine
 # 60095 = https://www.spigotmc.org/resources/invunload.60095/ InvUnload
 # 28140 = https://www.spigotmc.org/resources/luckperms.28140/ LuckPerms
 # 59773 = https://www.spigotmc.org/resources/chestsort-api.59773/ ChestSort+
-# 91722 = https://www.spigotmc.org/resources/protocollib.91722/ ProtocolLib
 # 6245 = https://www.spigotmc.org/resources/placeholderapi.6245/ PlaceholderAPI
+# 22023 = https://www.spigotmc.org/resources/slot-machine.22023/ Slot Machine
+SPIGET_RESOURCES="60095,28140,59773,6245,22023"
 
-
-
-
-SPIGET_RESOURCES="60095,28140,59773,91722,6245"
 # Config management
 # REPLACE_ENV_VARIABLES=true
 # ENV_VARIABLE_PREFIX="CFG_"
