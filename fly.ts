@@ -68,7 +68,6 @@ const plugins = [
   "https://cdn.modrinth.com/data/MubyTbnA/versions/vbGiEu4k/FreedomChat-Paper-1.6.0.jar",
   "https://ci.dmulloy2.net/job/ProtocolLib/lastSuccessfulBuild/artifact/build/libs/ProtocolLib.jar",
   "https://download.luckperms.net/1549/bukkit/loader/LuckPerms-Bukkit-5.4.134.jar",
-  "https://github.com/flokol120/Spigot-Item-Chest-Sorter/releases/download/1.14.5/ItemChestSorter-1.14.5.jar",
   "https://github.com/jmattingley23/AppleSkinSpigot/releases/download/latest/AppleSkinSpigot-1.2.0.jar",
   "https://hangarcdn.papermc.io/plugins/CyntrixAlgorithm/DeathChest/versions/2.2.5/PAPER/deathchest.jar",
   "https://hangarcdn.papermc.io/plugins/EngineHub/CraftBook/versions/5.0.0-beta-03/PAPER/craftbook-bukkit-5.0.0-beta-03.jar",
@@ -77,6 +76,7 @@ const plugins = [
   "https://hangarcdn.papermc.io/plugins/Multiverse/Multiverse-Inventories/versions/4.2.6/PAPER/multiverse-inventories-4.2.6.jar",
   "https://hangarcdn.papermc.io/plugins/Multiverse/Multiverse-NetherPortals/versions/4.2.3/PAPER/multiverse-netherportals-4.2.3.jar",
   "https://hangarcdn.papermc.io/plugins/Multiverse/Multiverse-Portals/versions/4.2.3/PAPER/multiverse-portals-4.2.3.jar",
+  "https://hangarcdn.papermc.io/plugins/NanoFlux/Networks/versions/2.1.8/PAPER/Networks-2.1.8.jar"
 ].join(",");
 
 const spiget_plugins = [
