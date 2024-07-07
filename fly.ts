@@ -69,7 +69,6 @@ const plugins = [
   "https://ci.dmulloy2.net/job/ProtocolLib/lastSuccessfulBuild/artifact/build/libs/ProtocolLib.jar",
   "https://download.luckperms.net/1549/bukkit/loader/LuckPerms-Bukkit-5.4.134.jar",
   "https://github.com/jmattingley23/AppleSkinSpigot/releases/download/latest/AppleSkinSpigot-1.2.0.jar",
-  "https://hangarcdn.papermc.io/plugins/CyntrixAlgorithm/DeathChest/versions/2.2.5/PAPER/deathchest.jar",
   "https://hangarcdn.papermc.io/plugins/EngineHub/CraftBook/versions/5.0.0-beta-03/PAPER/craftbook-bukkit-5.0.0-beta-03.jar",
   "https://hangarcdn.papermc.io/plugins/LOOHP/ImageFrame/versions/1.7.9/PAPER/ImageFrame-1.7.9.0.jar",
   "https://hangarcdn.papermc.io/plugins/Multiverse/Multiverse-Core/versions/4.3.12/PAPER/multiverse-core-4.3.12.jar",
