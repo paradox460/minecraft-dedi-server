@@ -80,9 +80,9 @@ const plugins = [
 ].join(",");
 
 const spiget_plugins = [
+  "https://www.spigotmc.org/resources/chestsort-api.59773/",
   "https://www.spigotmc.org/resources/invunload.60095/",
   "https://www.spigotmc.org/resources/luckperms.28140/",
-  "https://www.spigotmc.org/resources/chestsort-api.59773/",
   "https://www.spigotmc.org/resources/placeholderapi.6245/",
   "https://www.spigotmc.org/resources/slot-machine.22023/",
 ].map((x) => x.match(/.*?\.(\d+)\/$/)![1]!).join(",");
