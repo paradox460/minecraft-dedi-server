@@ -42,6 +42,7 @@ ${flyProxyConfig()}
 MAX_MEMORY="7G"
 TZ="America/Denver"
 ENABLE_ROLLING_LOGS="TRUE"
+CREATE_CONSOLE_IN_PIPE="true"
 REPLACE_ENV_VARIABLE_PREFIX=""
 
 # Minecraft Base
