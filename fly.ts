@@ -122,3 +122,5 @@ let outputs = [
 ].map((x) => x.trim()).join("\n");
 
 await Deno.writeTextFile("fly.toml", outputs);
+
+console.log("Generated new fly.toml file\n");
