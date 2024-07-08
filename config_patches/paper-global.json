@@ -7,6 +7,12 @@
         "value": "${USES_PROXY_PROTOCOL}",
         "value-type": "bool"
       }
+    },
+    {
+      "$set": {
+        "path": "$.messages.use-display-name-in-quit-message",
+        "value": true
+      }
     }
   ]
 }

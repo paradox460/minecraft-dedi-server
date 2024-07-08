@@ -1,0 +1,11 @@
+{
+  "file": "/data/config/paper-world-defaults.yml",
+  "ops": [
+    {
+      "$set": {
+        "path": "$.entities.behavior.disable-chest-cat-detection",
+        "value": true
+      }
+    }
+  ]
+}
