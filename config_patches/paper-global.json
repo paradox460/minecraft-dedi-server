@@ -1,0 +1,12 @@
+{
+  "file": "/data/config/paper-global.yml",
+  "ops": [
+    {
+      "$set": {
+        "path": "$.proxies.proxy-protocol",
+        "value": "${USES_PROXY_PROTOCOL}",
+        "value-type": "bool"
+      }
+    }
+  ]
+}
