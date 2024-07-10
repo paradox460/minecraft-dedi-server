@@ -11,6 +11,9 @@ const
   // the proxy running, so it can remap connections.
   // This handles all that automatically
   enableProxy = true,
+  // Enable BlueMap. This sets up a HTTPs port in your fly config, and loads bluemap
+  enableBlueMap = true,
+  // Configure your plugins here
   plugins = [
     "https://cdn.modrinth.com/data/1u6JkXh5/versions/VaMk0SQH/worldedit-bukkit-7.3.2.jar",
     "https://cdn.modrinth.com/data/Lu3KuzdV/versions/llmrc4cl/CoreProtect-22.4.jar",
@@ -36,6 +39,7 @@ const
     "https://www.spigotmc.org/resources/slot-machine.22023/",
     "https://www.spigotmc.org/resources/cmilib.87610/",
   ],
+  bluemap = enableBlueMap ? ["https://hangarcdn.papermc.io/plugins/Blue/BlueMap/versions/5.2/PAPER/BlueMap-5.2-paper.jar", "https://github.com/Mark-225/BlueBridge/releases/download/2.1/BlueBridgeCore-2.1.jar"] : []
 
 
 
@@ -79,6 +83,12 @@ const flyProxyConf = enableProxy ? {
   proxy_proto_options: { version: "v2" }
 } : {};
 
+const blueMapConfig = {
+  internal_port: 8080,
+  force_https: true,
+  auto_stop_machines: false,
+  auto_start_machines: false,
+}
 
 const config = {
   app: "pdx-minecraft",
@@ -90,6 +100,7 @@ const config = {
     initial_size: "15"
   },
   vm: [{ size: "shared-cpu-8x", memory: "8gb", cpus: 4 }],
+  http_service: enableBlueMap ? blueMapConfig : null,
   services: [
     {
       internal_port: 25565,
@@ -102,7 +113,7 @@ const config = {
           ...flyProxyConf,
         }
       ]
-    },
+    }
   ],
   env: {
     ...generalEnv,
@@ -116,6 +127,7 @@ const config = {
 function pluginEnvs() {
   const pluginSum = [
     ...plugins,
+    ...bluemap,
   ]
   return {
     PLUGINS: pluginSum.join(","),
