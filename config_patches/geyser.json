@@ -1,0 +1,12 @@
+{
+  "file": "/data/plugins/Geyser-Spigot/config.yml",
+  "ops": [
+    {
+      "$set": {
+        "path": "$.remote.use-proxy-protocol",
+        "value": "${USES_PROXY_PROTOCOL}",
+        "value-type": "bool"
+      }
+    }
+  ]
+}

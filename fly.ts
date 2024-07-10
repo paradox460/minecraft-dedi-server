@@ -14,6 +14,9 @@ const
   // Enable BlueMap. This sets up a HTTPs port in your fly config, and loads bluemap
   enableBlueMap = true,
   // Configure your plugins here
+  // Geyser lets bedrock players play on real minecraft. Should we enable it?
+  // Note you might want to disable proxy for Geyser, it gets funky with it
+  enableGeyser = true,
   plugins = [
     // "https://cdn.modrinth.com/data/1u6JkXh5/versions/VaMk0SQH/worldedit-bukkit-7.3.2.jar",
     "https://cdn.modrinth.com/data/Lu3KuzdV/versions/llmrc4cl/CoreProtect-22.4.jar",
@@ -44,6 +47,11 @@ const
     "https://www.spigotmc.org/resources/cmilib.87610/",
   ],
   bluemap = enableBlueMap ? ["https://hangarcdn.papermc.io/plugins/Blue/BlueMap/versions/5.2/PAPER/BlueMap-5.2-paper.jar", "https://github.com/Mark-225/BlueBridge/releases/download/2.1/BlueBridgeCore-2.1.jar"] : []
+  geyserPlugins = [
+    "https://download.geysermc.org/v2/projects/floodgate/versions/latest/builds/latest/downloads/spigot",
+    "https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/spigot",
+    "https://hangarcdn.papermc.io/plugins/ViaVersion/ViaVersion/versions/5.0.1/PAPER/ViaVersion-5.0.1.jar",
+  ]
 
 
 
@@ -93,6 +101,18 @@ const blueMapConfig = {
   auto_stop_machines: false,
   auto_start_machines: false,
 }
+const geyserConf = enableGeyser ? [{
+  internal_port: 19132,
+  protocol: "udp",
+  auto_stop_machines: false,
+  auto_start_machines: false,
+  ports: [
+    {
+      port: 19132,
+      // ...flyProxyConf,
+    }
+  ]
+}] : []
 
 const config = {
   app: "pdx-minecraft",
@@ -117,7 +137,8 @@ const config = {
           ...flyProxyConf,
         }
       ]
-    }
+    },
+    ...geyserConf,
   ],
   env: {
     ...generalEnv,
@@ -132,6 +153,7 @@ function pluginEnvs() {
   const pluginSum = [
     ...plugins,
     ...bluemap,
+    ...(enableGeyser ? geyserPlugins : [])
   ]
   return {
     PLUGINS: pluginSum.join(","),
