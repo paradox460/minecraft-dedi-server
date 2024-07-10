@@ -15,7 +15,7 @@ const
   enableBlueMap = true,
   // Configure your plugins here
   plugins = [
-    "https://cdn.modrinth.com/data/1u6JkXh5/versions/VaMk0SQH/worldedit-bukkit-7.3.2.jar",
+    // "https://cdn.modrinth.com/data/1u6JkXh5/versions/VaMk0SQH/worldedit-bukkit-7.3.2.jar",
     "https://cdn.modrinth.com/data/Lu3KuzdV/versions/llmrc4cl/CoreProtect-22.4.jar",
     "https://cdn.modrinth.com/data/MubyTbnA/versions/vbGiEu4k/FreedomChat-Paper-1.6.0.jar",
     "https://cdn.modrinth.com/data/RPOSBQgq/versions/E7jCNr0p/itemswapperplugin-0.2.1-SNAPSHOT.jar",
@@ -30,6 +30,10 @@ const
     "https://hangarcdn.papermc.io/plugins/Multiverse/Multiverse-Portals/versions/4.2.3/PAPER/multiverse-portals-4.2.3.jar",
     "https://hangarcdn.papermc.io/plugins/NanoFlux/Networks/versions/2.1.8/PAPER/Networks-2.1.8.jar",
     "https://hangarcdn.papermc.io/plugins/Vicarious/Carbon/versions/3.0.0-beta.27/PAPER/carbonchat-paper-3.0.0-beta.27.jar",
+
+    "https://ci.athion.net/job/FastAsyncWorldEdit/lastSuccessfulBuild/artifact/artifacts/FastAsyncWorldEdit-Bukkit-2.11.1-SNAPSHOT-846.jar",
+    "https://modrinth.com/plugin/fastasyncvoxelsniper/version/3.2.0",
+
   ],
   spigetPlugins = [
     "https://www.spigotmc.org/resources/chestsort-api.59773/",
