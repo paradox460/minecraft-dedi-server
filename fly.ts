@@ -15,11 +15,10 @@ const
   enableBlueMap = true,
   // Configure your plugins here
   plugins = [
-    "https://cdn.modrinth.com/data/1u6JkXh5/versions/VaMk0SQH/worldedit-bukkit-7.3.2.jar",
+    "https://cdn.modrinth.com/data/1u6JkXh5/versions/vMrPkmgF/worldedit-bukkit-7.3.4.jar",
     "https://cdn.modrinth.com/data/Lu3KuzdV/versions/llmrc4cl/CoreProtect-22.4.jar",
     "https://cdn.modrinth.com/data/MubyTbnA/versions/vbGiEu4k/FreedomChat-Paper-1.6.0.jar",
     "https://cdn.modrinth.com/data/RPOSBQgq/versions/E7jCNr0p/itemswapperplugin-0.2.1-SNAPSHOT.jar",
-    "https://ci.dmulloy2.net/job/ProtocolLib/lastSuccessfulBuild/artifact/build/libs/ProtocolLib.jar",
     "https://ci.enginehub.org/repository/download/bt6/24948:id/craftbook-3.10.12-SNAPSHOT-dist.jar?branch=master&guest=1",
     "https://github.com/jmattingley23/AppleSkinSpigot/releases/download/latest/AppleSkinSpigot-1.2.0.jar",
     "https://github.com/MiniPlaceholders/MiniPlaceholders/releases/download/2.2.4/MiniPlaceholders-Paper-2.2.4.jar",
